@@ -1,0 +1,66 @@
+Step 2:
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 377
+Server: Werkzeug/2.0.1 Python/3.9.7
+Date: Sat, 04 Sep 2021 20:40:40 GMT
+
+{
+  "tasks": [
+    {
+      "description": "Milk, Cheese, Pizza, Fruit, Tylenol",
+      "done": false,
+      "title": "Buy groceries",
+      "uri": "http://127.0.0.1:5000/todo/1"
+    },
+    {
+      "description": "Need to find a good Python tutorial on the web",
+      "done": false,
+      "title": "Learn Python",
+      "uri": "http://127.0.0.1:5000/todo/2"
+    }
+  ]
+}
+
+Step 3:
+HTTP/1.0 201 CREATED
+Content-Type: application/json
+Content-Length: 153
+Server: Werkzeug/2.0.1 Python/3.9.7
+Date: Sat, 04 Sep 2021 22:30:25 GMT
+
+{
+  "task": {
+    "description": "Phony Task",
+    "done": false,
+    "title": "Ryan's Task",
+    "uri": "http://http://127.0.0.1:5000//todo/3"
+  }
+}
+
+Step 4:
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 144
+Server: Werkzeug/2.0.1 Python/3.9.7
+Date: Sat, 04 Sep 2021 22:36:11 GMT
+
+{
+  "task": {
+    "description": "Phony Task",
+    "done": true,
+    "title": "Ryan's Task",
+    "uri": "http://127.0.0.1:5000/todo/3"
+  }
+}
+
+Step 5:
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 21
+Server: Werkzeug/2.0.1 Python/3.9.7
+Date: Sat, 04 Sep 2021 22:37:15 GMT
+
+{
+  "result": true
+}
